@@ -63,7 +63,7 @@ TextMate bundle: <https://github.com/juanghurtado/less-elements.tmbundle> (for o
    <code>.font(1em, 1.25em, bold);</code>
    
    <br/>
-   <li><b>.rotation</b>              - CSS3 - simple elements rotate</li>
+   <li><b>.rotation</b>              - CSS3 - simple rotate elements</li>
    
    <code>.rotation(5deg);</code>
    
