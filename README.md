@@ -12,15 +12,15 @@ TextMate bundle: <https://github.com/juanghurtado/less-elements.tmbundle> (for o
    <ul>
    <li><b>.gradient-h</b>            - CSS3 - horizontal gradient (works in IE)</li>
    
-   <code>.gradient-h(#fff, #fff, #fbfbfb);</code>
+   <code>.gradient-h(#fff, #fbfbfb);</code>
    
    <li><b>.gradient-v</b>            - CSS3 - veritical gradient (works in IE)</li>
    
-   <code>.gradient-v(#fff, #fff, #fbfbfb);</code>
+   <code>.gradient-v(#fff, #fbfbfb);</code>
    
    <li><b>.gradient-radial</b>       - CSS3 - radial gradient (works also on IE9+)</li>
    
-   <code>.gradient-radial(#fff, #fff, #fbfbfb);</code>
+   <code>.gradient-radial(#fff, #fbfbfb);</code>
    
    <br/>
    <li><b>.bordered</b>              - custom borders color and size style</li>
@@ -34,11 +34,11 @@ TextMate bundle: <https://github.com/juanghurtado/less-elements.tmbundle> (for o
    
    <li><b>.outer-shadow</b>          - CSS3 - outher element shadow</li>
    
-   <code>.outer-shadow(0px 0px 0.83em #333);</code>
+   <code>.outer-shadow(0px 0px 0.83em, #333);</code>
    
    <li><b>.inner-shadow</b>          - CSS3 - shadow inside the element</li>
    
-   <code>.inner-shadow(0px 0px 1px #fbfbfb);</code>
+   <code>.inner-shadow(0px 0px 1px, #fbfbfb);</code>
    
    <li><b>.io-shadow</b>             - CSS3 - inner & outer shadow</li>
    

@@ -1,5 +1,5 @@
 /* =========================================
-   LESS Elements 1.0
+   LESS Elements 1.1
    =========================================
    
    LESS mixins by Dmitry Fadeyev
@@ -20,7 +20,7 @@
    
    .gradient-h          - CSS3 - horizontal gradient (works in IE)
    .gradient-v          - CSS3 - veritical gradient (works in IE)
-   .gradient-radial     - CSS3 - radial gradient (also works on IE9+)
+   .gradient-radial     - CSS3 - radial gradient (works also on IE9+)
  
    .bordered            - custom borders style
    
@@ -37,7 +37,7 @@
    
    .rotation            - CSS3 - simple elements rotate
    .scale               - CSS3 - elements scaling
-   .translate           - CSS3 - transform elements (also works on IE9+)
+   .translate           - CSS3 - transform elements (works also on IE9+)
    .transition          - CSS3 - transition effects
    .animation           - CSS3 - simple add animation (checkout: http://daneden.me/animate/)
    
@@ -45,8 +45,8 @@
    
    ========================================= */
 
-.gradient-h(@color: #F5F5F5, @start: #EEE, @stop: #FFF) {
-  background-color: @color;
+.gradient-h(@start: #EEE, @stop: #FFF) {
+  background-color: @start;
   background-image: -webkit-gradient(linear, left top, left bottom, from(@start),to(@stop));
   background-image: -webkit-linear-gradient(top, @start, @stop);
   background-image: -moz-linear-gradient(top, @start, @stop);
@@ -56,8 +56,8 @@
   filter: e(%("progid: DXImageTransform.Microsoft.gradient(startColorStr='%d', EndColorStr='%d')", @start, @stop));
 }
 
-.gradient-v(@color: #F5F5F5, @start: #EEE, @stop: #FFF) {
-  background-color: @color;
+.gradient-v(@start: #EEE, @stop: #FFF) {
+  background-color: @start;
   background-image: -webkit-gradient(linear, left center, right center, from(@start),to(@stop));
   background-image: -webkit-linear-gradient(left, @start, @stop);
   background-image: -moz-linear-gradient(left, @start, @stop);
@@ -67,8 +67,8 @@
   filter: e(%("progid: DXImageTransform.Microsoft.gradient(startColorStr='%d', EndColorStr='%d')", @start, @stop));
 }
 
-.gradient-radial(@color: #F5F5F5, @start: 0, @stop: 255) {
-  background-color: @color;
+.gradient-radial(@start: #EEE, @stop: #FFF) {
+  background-color: @start;
   background-image: -webkit-gradient(radial, 50% 50%,200,50% 50%,20, from(@start),to(@stop));
   background-image: -webkit-radial-gradient(50% 50%, @start, @stop);
   background-image: -moz-radial-gradient(50% 50%, @start, @stop);
@@ -83,25 +83,25 @@
   border-bottom: solid @b_width @bottom-color;
 }
 
-.alpha-shadow(@asval: 0 0 0.83em, @alpha_shadow: 0.4) {
+.alpha-shadow(@asval: 0px 0px 0.83em, @alpha_shadow: 0.4) {
   -webkit-box-shadow: @asval rgba(0, 0, 0, @alpha_shadow);
   -moz-box-shadow: @asval rgba(0, 0, 0, @alpha_shadow);
   -o-box-shadow: @asval rgba(0, 0, 0, @alpha_shadow);
   box-shadow: @asval rgba(0, 0, 0, @alpha_shadow);
 }
 
-.outer-shadow(@bsval: 0px 0px 0.83em #333) {
-  -moz-box-shadow: @bsval;
-  -webkit-box-shadow: @bsval;
-  -o-box-shadow: @bsval;
-  box-shadow: @bsval;
+.outer-shadow(@osval: 0px 0px 0.83em, @os_color: #222) {
+  -moz-box-shadow: @osval @os_color;
+  -webkit-box-shadow: @osval @os_color;
+  -o-box-shadow: @osval @os_color;
+  box-shadow: @osval @os_color;
 }
 
-.inner-shadow(@isval: 0px 0px 0.83em #333) {
-  -moz-box-shadow: @isval inset;
-  -webkit-box-shadow: @isval inset;
-  -o-box-shadow: @isval inset;
-  box-shadow: @isval inset;
+.inner-shadow(@isval: 0px 0px 0.83em, @is_color: #222) {
+  -moz-box-shadow: @isval @is_color inset;
+  -webkit-box-shadow: @isval @is_color inset;
+  -o-box-shadow: @isval @is_color inset;
+  box-shadow: @isval @is_color inset;
 }
 
 .io-shadow(@osval: 0px 1px 2px rgba(0, 0, 0, 0.3), @isval: 0px 1px 0px rgba(255, 255, 255, 0.4)) {
@@ -159,9 +159,9 @@
   transition: @t_property @t_duration @t_timing @t_delay;
 }
 
-.animation(@a_name: none, @a_duration: 0, @a_timing-function: ease, @a_delay: 0, @a_iteration-count: 1, @a_direction: normal, @a_state: running) {
-  -moz-animation: @a_name @a_duration @a_timing-function @a_delay @a_iteration-count @a_direction;
+.animation(@a_name: none, @a_duration: 2s, @a_timing-function: ease, @a_delay: 0, @a_iteration-count: 1, @a_direction: normal, @a_state: running) {
   -webkit-animation: @a_name @a_duration @a_timing-function @a_delay @a_iteration-count @a_direction;
+  -moz-animation: @a_name @a_duration @a_timing-function @a_delay @a_iteration-count @a_direction;
   -ms-animation: @a_name @a_duration @a_timing-function @a_delay @a_iteration-count @a_direction;
   -o-animation: @a_name @a_duration @a_timing-function @a_delay @a_iteration-count @a_direction;
   animation: @a_name @a_duration @a_timing-function @a_delay @a_iteration-count @a_direction;
