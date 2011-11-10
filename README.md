@@ -1,13 +1,10 @@
-LESS Elements
+LESS Elements v1+
 =============
 
-A set of useful mixins for LESS, the CSS pre-processor: <http://lesscss.org>
+A set of useful mixins for LESS, the CSS pre-processor: <a href="http://lesscss.org" target="_blank">lesscss.org</a>
+<br/>I recommend '<a href="http://incident57.com/codekit/" target="_blank">CodeKit</a>' app for best work results :) (only OS X)
 
-More information and usage examples over at: <http://lesselements.com> (for old 0.6 version)
-
-TextMate bundle: <https://github.com/juanghurtado/less-elements.tmbundle> (for old 0.6 version)
-
-   <b>v1.0 Features:</b>
+   <b>Features:</b>
    
    <ul>
    <li><b>.gradient-h</b>            - CSS3 - horizontal gradient (works in IE)</li>
