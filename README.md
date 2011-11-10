@@ -18,7 +18,7 @@ TextMate bundle: <https://github.com/juanghurtado/less-elements.tmbundle> (for o
    
    <code>.gradient-v(#fff, #fff, #fbfbfb);</code>
    
-   <li><b>.gradient-radial</b>       - CSS3 - radial gradient (also works on IE9+)</li>
+   <li><b>.gradient-radial</b>       - CSS3 - radial gradient (works also on IE9+)</li>
    
    <code>.gradient-radial(#fff, #fff, #fbfbfb);</code>
    
@@ -71,7 +71,7 @@ TextMate bundle: <https://github.com/juanghurtado/less-elements.tmbundle> (for o
    
    <code>.scale(1.5);</code>
    
-   <li><b>.translate</b>             - CSS3 - transform elements (also works on IE9+)</li>
+   <li><b>.translate</b>             - CSS3 - transform elements (works also on IE9+)</li>
    
    <code>.translate(10, 0);</code>
    
