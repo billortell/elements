@@ -23,7 +23,7 @@ TextMate bundle: <https://github.com/juanghurtado/less-elements.tmbundle> (for o
    <code>.gradient-radial(#fff, #fff, #fbfbfb);</code>
    
    <br/>
-   <li><b>.bordered</b>              - custom borders wall style</li>
+   <li><b>.bordered</b>              - custom borders color and size style</li>
       
    <code>.bordered(#EEE, #CCC, #999, #333, 1px);</code>
    
