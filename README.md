@@ -76,7 +76,7 @@ A set of useful mixins for LESS, the CSS pre-processor: <a href="http://lesscss.
    
    <code>.transition(all, 0.2s, ease-out, 1s);</code>
    
-   <li><b>.animation</b>             - CSS3 - simple add animation (required: <http://daneden.me/animate/> but you also can create own animation)</li>
+   <li><b>.animation</b>             - CSS3 - simple add animation (required: <http://daneden.me/animate/> but you also can create your own animation)</li>
    
    <code>.animation(fadeOut);</code> or <code>.animation(fadeIn, 0, ease, 2s, 1, normal, running);</code>
    
