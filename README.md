@@ -79,7 +79,7 @@ TextMate bundle: <https://github.com/juanghurtado/less-elements.tmbundle> (for o
    
    <code>.transition(all, 0.2s, ease-out, 1s);</code>
    
-   <li><b>.animation</b>             - CSS3 - simple add animation (checkout: <http://daneden.me/animate/>)</li>
+   <li><b>.animation</b>             - CSS3 - simple add animation (checkout: <http://daneden.me/animate/> project for downloads some CSS effects)</li>
    
    <code>.animation(fadeOut);</code> or <code>.animation(fadeIn, 0, ease, 2s, 1, normal, running);</code>
    
