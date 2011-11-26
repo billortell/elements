@@ -105,10 +105,10 @@
 }
 
 .io-shadow(@osval: 0px 1px 2px rgba(0, 0, 0, 0.3), @isval: 0px 1px 0px rgba(255, 255, 255, 0.4)) {
-  -moz-box-shadow: @bsval, @isval inset;
-  -webkit-box-shadow: @bsval, @isval inset;
-  -o-box-shadow: @bsval, @isval inset;
-  box-shadow: @bsval, @isval inset;
+  -moz-box-shadow: @osval, @isval inset;
+  -webkit-box-shadow: @osval, @isval inset;
+  -o-box-shadow: @osval, @isval inset;
+  box-shadow: @osval, @isval inset;
 }
 
 .rounded(@radius: 2px) {
@@ -116,6 +116,7 @@
   -webkit-border-radius: @radius;
   -o-border-radius: @radius;
   -ms-border-radius: @radius;
+  -khtml-border-radius: @radius;
   border-radius: @radius;
 }
 
@@ -132,7 +133,7 @@
   opacity: @opacity;
 }
 
-.font(@f_size: 16px, @f_lineheight: 20, @f_weight: normal) {
+.font(@f_size: 16px, @f_lineheight: 20px, @f_weight: normal) {
   font-size: @f_size;
   line-height: @f_lineheight;
   font-weight: @f_weight;
@@ -176,7 +177,7 @@
   transform: translate(@x, @y);
 }
 
-.columns(@colwidth: 250, @colcount: 0, @colgap: 50, @columnRuleColor: #EEE, @columnRuleStyle: solid, @columnRuleWidth: 1px) {
+.columns(@colwidth: 250px, @colcount: 0, @colgap: 50px, @columnRuleColor: #EEE, @columnRuleStyle: solid, @columnRuleWidth: 1px) {
   -moz-column-width: @colwidth;
   -moz-column-count: @colcount;
   -moz-column-gap: @colgap;
